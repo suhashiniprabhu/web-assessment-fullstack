@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="inputNames">
+            <form id="playerNameForm">
+                <label for="playerXName">Player <span class="display-playerx playerX">X</span>'s Name:</label>
+                <input type="text" id="playerXName" name="playerXName"><br><br>
+                <label for="playerOName">Player <span class="display-playerO playerO">O</span>'s Name:</label>
+                <input type="text" id="playerOName" name="playerOName"><br><br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </section>
+        <div class="playGround hide">
+            <div class="withScoreBoard">
+                <div class="scoreboard container d-flex flex-column justify-content-center">
+                    <div class="row row-cols-1 row-cols-md-2 text-center py-5 justify-content-center">
+                        <div class="col col-auto py-3 points d-flex flex-column align-items-center">
+                            <h2 id="playerNamex"></h2>
+                            <p id="playerNamex-points" class="px-3">0</p>
+                        </div>                
+                        <div class="col col-auto py-3 points d-flex flex-column align-items-center">
+                            <h2 id=playerNameo></h2>
+                            <p id="playerNameo-points" class="px-3">0</p>               
+                    </div>                
+                </div>
+            </div>
+            <div>
+                <section class="display">
+                    <!-- <span id="currentPlayerDispaly"></span> -->
+                    Player <span class="display-player playerX">X</span>'s turn
+                </section>
+                <section class="container">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </section>
+                <section class="display announcer hide"></section>
+                <section class="controls">
+                    <button id="reset">Reset</button>
+                </section>
+            </div>
+            </div>
+    </main>
+</body>
+
+</html>
